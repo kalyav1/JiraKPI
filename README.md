@@ -30,5 +30,12 @@ To gain insight into the defect status for a specific release, the process mirro
 Once the filter is saved, navigate to your Jira dashboard and click the "Add gadget" button. Search for and select the "Issue Statistics" gadget. Configure this gadget by selecting the blocker-specific filter you just created. Set the "Stats Type" to "Status," and ensure "Show resolved issue stats" is set to "Yes." Finally, set your desired "Refresh Interval," such as 15 minutes, and click "Save" 
 
 </details>
+<details>
+<summary>Release Dependencies</summary>
+To effectively track dependencies related to a specific release, you'll need to create a dedicated Jira filter and then display it using a different gadget type for a more detailed view. <blockQuote>First, navigate to the Jira search field and enter the following query: fixVersion ="" and project = "" and issueLinkType in (Dependency,Predecessors, Successors). </blockQuote>Make sure to replace the empty quotes with the relevant Fix Version and Project name. Execute this search and save it as a filter, using a clear name like "Project name _ Milestone name _ Dependencies."
+Next, to visualize these dependencies on your Jira dashboard, click the "Add gadget" button. This time, search for and select the "Filter Results" gadget. When configuring this gadget, select the dependency-specific filter you just saved. In the configuration options, specify the "Fields to display" as: Issue Type, Key, Summary, and Linked Issues. Finally, set your desired "Refresh Interval," such as 15 minutes, and click "Save
+
+  
+</details>
 </details>
 
