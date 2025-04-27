@@ -23,5 +23,14 @@ Release defect Status
   </summary>
 To gain insight into the defect status for a specific release, the process mirrors the release status setup with a refined Jira filter. Begin by navigating to the Jira search field, clicking enter, and entering the query: fixVersion ="" and project = "" and issuetype in (Bug). Remember to replace the empty quotes with the specific Fix Version, and Project namen. Execute this search and save it as a new filter, using a descriptive name such as "Project name _ Milestone name _ Defects." Next, to visualize this defect data on your Jira dashboard, click the "Add gadget" button. Search for and select the "Issue Statistics" gadget. When configuring the gadget, choose the defect-specific filter you just saved. Set the "Stats Type" to "Status," and ensure "Show resolved issue stats" is set to "Yes." Finally, configure the "Refresh Interval" to your desired frequency, such as 15 minutes, and click "Save" 
 </details>
+<details>
+<summary>  Release Impediments</summary>
+To effectively monitor blockers within a release, you can create a dedicated Jira filter and display it on a dashboard. Start by navigating to the Jira search field and entering one of the following queries, depending on how blockers are tracked in your instance:
+•	Using "Is blocked by" or "Blocks" links: fixVersion ="" and project = "" and issueLinkType in ("Is blocked by",Blocks)
+•	Using a "Flagged" field: fixVersion ="" and project = "" and "Flagged[Checkboxes]" = Impediment
+Remember to replace the empty quotes with the relevant Fix Version and Project name. Execute the chosen search and save it as a filter, using a clear and consistent naming convention like "Project name _ Milestone name _ Blockers."
+Once the filter is saved, navigate to your Jira dashboard and click the "Add gadget" button. Search for and select the "Issue Statistics" gadget. Configure this gadget by selecting the blocker-specific filter you just created. Set the "Stats Type" to "Status," and ensure "Show resolved issue stats" is set to "Yes." Finally, set your desired "Refresh Interval," such as 15 minutes, and click "Save" 
+
+</details>
 </details>
 
