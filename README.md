@@ -1,5 +1,4 @@
 # JiraKPI
-Article on Jira KPIs<br>
 In the dynamic world of software development, maintaining a clear line of sight across the delivery lifecycle is paramount. Project managers, product owners, and development teams alike strive for predictable releases and transparent progress. Jira, a cornerstone tool for many agile teams, offers a wealth of data that, when strategically leveraged as Key Performance Indicators (KPIs), can provide invaluable insights into delivery governance. This article delves into essential Jira KPIs
 
 Fix Version<br>
@@ -15,5 +14,11 @@ Dashboards centered around Fix Versions provide essential visibility into severa
   </summary>
 To visualize the release status effectively within Jira, begin by creating a specific filter. Navigate to the search field, click enter, and input the query fixVersion ="" and project = "", ensuring you replace the empty quotes with the relevant Fix Version, and Project name respectively. Execute the search and save it as a filter, adopting a clear naming convention like "Project name _ Milestone name _ WorkItems." Next, to display this information on a dashboard, navigate to your Jira dashboard and click the "+" sign to create a new dashboard and add a gadget to an existing one. Search for and select the "Issue Statistics" gadget. Configure this gadget by choosing the saved filter you previously created. Set the "Stats Type" to "Status," and select "Yes" for "Show resolved issue stats." Finally, set the "Refresh Interval" to 15 minutes to ensure near real-time updates and click "Save" 
 
+</details>
+<details>
+  <summary>
+Release defect Status
+  </summary>
+To gain insight into the defect status for a specific release, the process mirrors the release status setup with a refined Jira filter. Begin by navigating to the Jira search field, clicking enter, and entering the query: fixVersion ="" and project = "" and issuetype in (Bug). Remember to replace the empty quotes with the specific Fix Version, and Project namen. Execute this search and save it as a new filter, using a descriptive name such as "Project name _ Milestone name _ Defects." Next, to visualize this defect data on your Jira dashboard, click the "Add gadget" button. Search for and select the "Issue Statistics" gadget. When configuring the gadget, choose the defect-specific filter you just saved. Set the "Stats Type" to "Status," and ensure "Show resolved issue stats" is set to "Yes." Finally, configure the "Refresh Interval" to your desired frequency, such as 15 minutes, and click "Save" 
 </details>
 
