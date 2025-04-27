@@ -1,7 +1,9 @@
 # JiraKPI
 In the dynamic world of software development, maintaining a clear line of sight across the delivery lifecycle is paramount. Project managers, product owners, and development teams alike strive for predictable releases and transparent progress. Jira, a cornerstone tool for many agile teams, offers a wealth of data that, when strategically leveraged as Key Performance Indicators (KPIs), can provide invaluable insights into delivery governance. This article delves into essential Jira KPIs
-
-Fix Version<br>
+<details>
+  <summary>
+Fix Version
+    </summary>
 Within the Jira ecosystem, the Fix Version acts as a designated release milestone. Think of it as a container that groups specific work items – typically User Stories and Defects – targeted for a particular deployment or release. While Features, which often span multiple releases, are intentionally excluded from direct Fix Version assignment, the Fix Version becomes the focal point for tracking the tangible deliverables within a defined timeframe. Jira's design inherently prevents associating a single work item with multiple Fix Versions. <br> <br>
 Organizations commonly establish a yearly release calendar that aligns with their Planning Intervals (PI). A typical PI often spans 6 to 7 two-week sprints, with major releases occurring at the culmination of each PI, resulting in approximately four major releases annually. Minor releases are frequently scheduled every other week. Once this release calendar is in place, the corresponding Fix Versions should be created within Jira by navigating to the project's "Releases" section and selecting "Create Fix Version," where the release name and date are then entered. It's essential that every new work item created in Jira is consistently mapped to a relevant Fix Version. Upon the completion of a release, the corresponding Fix Version should be marked as "Released" only after confirming that all associated work items have been moved to a "Done" status. Any work items that remain incomplete at the release milestone must be promptly reassigned to the Fix Version of the next scheduled release. This review and reassignment of incomplete items should be a periodic practice <br> <br>
 
@@ -20,5 +22,6 @@ To visualize the release status effectively within Jira, begin by creating a spe
 Release defect Status
   </summary>
 To gain insight into the defect status for a specific release, the process mirrors the release status setup with a refined Jira filter. Begin by navigating to the Jira search field, clicking enter, and entering the query: fixVersion ="" and project = "" and issuetype in (Bug). Remember to replace the empty quotes with the specific Fix Version, and Project namen. Execute this search and save it as a new filter, using a descriptive name such as "Project name _ Milestone name _ Defects." Next, to visualize this defect data on your Jira dashboard, click the "Add gadget" button. Search for and select the "Issue Statistics" gadget. When configuring the gadget, choose the defect-specific filter you just saved. Set the "Stats Type" to "Status," and ensure "Show resolved issue stats" is set to "Yes." Finally, configure the "Refresh Interval" to your desired frequency, such as 15 minutes, and click "Save" 
+</details>
 </details>
 
