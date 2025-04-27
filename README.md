@@ -37,5 +37,13 @@ Next, to visualize these dependencies on your Jira dashboard, click the "Add gad
 
   
 </details>
+<details>
+  <summary>
+    Version Report
+
+  </summary>
+  To gain a high-level overview of a release's progress and any scope changes, Jira's built-in Version Report gadget is invaluable. <blockQuote> To add this to your dashboard, click the "Add gadget" button and search for "Version Report." Once found, select it.</blockQuote> In the configuration settings, you'll need to specify the Board Name associated with your project and then select the specific Version Name (which corresponds to your Fix Version). Finally, set the Refresh Interval to your desired frequency, such as 15 minutes, to ensure the report stays up-to-date, and then click "Save." This gadget will provide a visual representation of the scope changes within the release and the progress being made towards the defined milestone date, offering a quick and easy way to track overall release health 
+
+</details>
 </details>
 
