@@ -9,7 +9,6 @@ Organizations commonly establish a yearly release calendar that aligns with thei
 
 Dashboards centered around Fix Versions provide essential visibility into several key aspects of a release. They offer a clear view of the work items planned for a specific milestone, the team's progress towards achieving it, any impediments currently blocking the release, and the status of all open defects. Furthermore, metrics such as scope changes, the burndown rate of work, the overall count and types of defects, impediments and the cycle time of work items within the release are valuable data points that make them strong contenders for insightful release retrospection meetings. <br> <br>
 <details>
-<br> <br>
   <summary>
    Release Status
   
