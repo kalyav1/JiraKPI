@@ -1,5 +1,5 @@
 # JiraKPI
-In the dynamic world of software development, maintaining a clear line of sight across the delivery lifecycle is paramount. Project managers, product owners, and development teams alike strive for predictable releases and transparent progress. Jira, a cornerstone tool for many agile teams, offers a wealth of data that, when strategically leveraged as Key Performance Indicators (KPIs), can provide invaluable insights into delivery governance. This article delves into essential Jira KPIs
+In the dynamic world of software development, maintaining a clear line of sight across the delivery lifecycle is paramount. IT managers, Scrum masters, product owners, and Agile teams alike strive for predictable releases and transparent progress. Jira, a cornerstone tool for many agile teams, offers a wealth of data that, when strategically leveraged as Key Performance Indicators (KPIs), can provide invaluable insights into delivery governance. This article delves into essential Jira KPIs
 <details>
   <summary>
 Fix Version
