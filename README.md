@@ -45,5 +45,18 @@ Next, to visualize these dependencies on your Jira dashboard, click the "Add gad
   To gain a high-level overview of a release's progress and any scope changes, Jira's built-in Version Report gadget is invaluable. <blockQuote> To add this to your dashboard, click the "Add gadget" button and search for "Version Report." Once found, select it.</blockQuote> In the configuration settings, you'll need to specify the Board Name associated with your project and then select the specific Version Name (which corresponds to your Fix Version). Finally, set the Refresh Interval to your desired frequency, such as 15 minutes, to ensure the report stays up-to-date, and then click "Save." This gadget will provide a visual representation of the scope changes within the release and the progress being made towards the defined milestone date, offering a quick and easy way to track overall release health 
 
 </details>
+<details>
+  <summary>
+      Backlog Health
+  </summary>
+To visualize the distribution of work across future sprints and gain insights into backlog health, you can use the "Filter Results" gadget on your Jira dashboard. <blockQuote>Navigate to Jira Search and type query Project = "" and fixVersion =""  AND Sprint in futureSprints() and Sprint not in closedSprints() and issueType in (Bug, Story).</blockQuote> Sprint not in closedSprints(), excludes the stories that were carried over. Remember to replace the empty quotes with your project's name, fixversion. Save filter as "Projectname_Milestonename_BacklogHealth". Click the "Add gadget" button and search for "Filter Results." Once selected, in the configuration, choose the saved filter, select Sprint, Story Point/Estimate additional columns, select refresh interval as 15 mins and click save. Work items with sum estimates matching average velocity of the team for the next 2 or 3 Sprints is a sign of healthy backlog 
+
+</details>
+</details>
+<details>
+  <summary>
+    Retrospection
+  </summary>
+  KPI driven retrospection can help improve productivity. <li>Defect Gadget gives insight into Total defects & Defect priority. While finding defects early in the cycle helps deliver stable product, too many defects takes away time from productive development. Context switching & retesting efforts are often costly</li> <li>Version report gadget-Provides visibility in to scope changes, any deviation from milestone date, and rate of progression towards the milestone date</li> <li>Backlog Health gadget-Helps identify any challenges with the planning part of the delivery funnel. Some of the corrective actions would be relooking at the staffing for the planning team(US, POs, BAs, SAs) or it need for additional grooming cermonies</li><li>Velocity Chart-Provides insights in to say to do commitment. Predictable velocity and near perfect say to do ratio is a sign of well formed Scrum team </li><li>Release dependencies & Impediments Gadgets-Provides visibility in to challenges faced by the scrum team. This provides the team Opportunity to find improvements in addition to Scrum of Scrum/ART Sync </li>
 </details>
 
