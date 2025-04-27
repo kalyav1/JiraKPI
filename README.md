@@ -25,7 +25,7 @@ To gain insight into the defect status for a specific release, the process mirro
 </details>
 <details>
 <summary>  Release Impediments</summary>
-> [!Note]
+> [!NOTE]
 > To effectively monitor blockers within a release, you can create a dedicated Jira filter and display it on a dashboard. Start by navigating to the Jira search field and entering one of the following queries, depending on how blockers are tracked in your instance:
 + Using "Is blocked by" or "Blocks" links: fixVersion ="" and project = "" and issueLinkType in ("Is blocked by",Blocks)
 + Using a "Flagged" field: fixVersion ="" and project = "" and "Flagged[Checkboxes]" = Impediment
