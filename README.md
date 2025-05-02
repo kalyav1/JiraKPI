@@ -52,13 +52,14 @@ Next, to visualize these dependencies on your Jira dashboard, click the "Add gad
 To visualize the distribution of work across future sprints and gain insights into backlog health, you can use the "Filter Results" gadget on your Jira dashboard. <blockQuote>Navigate to Jira Search and type query Project = "" and fixVersion =""  AND Sprint in futureSprints() and Sprint not in closedSprints() and issueType in (Bug, Story).</blockQuote> Sprint not in closedSprints(), excludes the stories that were carried over. Remember to replace the empty quotes with your project's name, fixversion. Save filter as "Projectname_Milestonename_BacklogHealth". Click the "Add gadget" button and search for "Filter Results." Once selected, in the configuration, choose the saved filter, select Sprint, Story Point/Estimate additional columns, select refresh interval as 15 mins and click save. Work items with sum estimates matching average velocity of the team for the next 2 or 3 Sprints is a sign of healthy backlog 
 
 </details>
+
+</details>
 <details>
   <summary>
       Created vs Resolved chart
   </summary>
 The Created vs. Resolved chart provides a visual representation of the team's delivery rate within the Kanban framework. This data can be utilized to forecast future capacity and inform workload management <blockQuote>Navigate to Jira Search and type query Project = "" and issueType in (Bug, Story).</blockQuote> Remember to replace the empty quotes with your project's name. Save filter as "Projectname_WorkItems". Click the "Add gadget" button and search for "Created vs resolved chart" Once selected, in the configuration, choose the saved filter,  select refresh interval as 15 mins and click save.  
 
-</details>
 </details>
 <details>
   <summary>
